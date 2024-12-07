@@ -4,4 +4,4 @@ remote_theme: pages-themes/hacker@v0.2.0
 plugins:
   - jekyll-seo-tag
 
-custom_css: assets/css/custom.css
+custom_css: _sites/assets/css/style.css
