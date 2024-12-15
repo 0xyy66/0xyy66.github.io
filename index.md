@@ -3,7 +3,6 @@ layout: default
 title: Home
 ---
 
-# Hello, World
-Just testing.
+# Welcome
 
-- [Test Post](./test_post.html)
+- [How to craft Malicious Machine Learning models](./2024-12-15-how-to-craft-malicious-ml-models)

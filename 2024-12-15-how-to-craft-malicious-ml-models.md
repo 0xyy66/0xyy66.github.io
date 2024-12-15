@@ -1,6 +1,9 @@
 ---
 layout: post
-title: How to craft Malicious Machine Learning models 
+title: How to craft Malicious Machine Learning models
+date: 2024-12-15
+categories: [Cybersecurity, Machine Learning]
+tags: [security, ai]
 ---
 
 This article aims to give an insight on how PyTorch malicious ML models work, how they are created and the possible solutions for a developer or an end user to protect themselves.
