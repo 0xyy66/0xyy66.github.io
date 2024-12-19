@@ -136,7 +136,7 @@ The payload will spawn a reverse shell on the target connecting back to my host 
 
 ![](./assets/images/reverse_shell.png)
 
-> I hacked myself and messed my terminal 😅.
+> I hacked myself and messed up my terminal 😅.
 
 ## How to defend yourself
 If you’re a machine learning practitioner, you might be asking yourself, “How can I protect myself when downloading countless PyTorch models from Hugging Face?” While I’ll outline some solutions at the end, let’s first dive into some background to set the stage.
