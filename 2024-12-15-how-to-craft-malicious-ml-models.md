@@ -141,7 +141,7 @@ The payload will spawn a reverse shell on the target connecting back to my host 
 ## How to defend yourself
 If you’re a machine learning practitioner, you might be asking yourself, “How can I protect myself when downloading countless PyTorch models from Hugging Face?” While I’ll outline some solutions at the end, let’s first dive into some background to set the stage.
 
-For those unfamiliar with [Hugging Face🤗](https://huggingface.co/) (yes, the emoji is mandatory, it is everywhere on their website!), it is a popular platform for sharing machine learning models.
+For those unfamiliar with [Hugging Face](https://huggingface.co/), it is a popular platform for sharing machine learning models.
 Think of it as PyPI, but for ML models. Users and organizations can upload their models, and Hugging Face provides an API that lets you easily download and integrate them into your Python code.
 As we've explored throughout this article, it's surprisingly easy to craft a malicious model. An attacker could exploit this by uploading such a model to Hugging Face with a name that mimics a popular model, leveraging typo squatting to trick users into downloading it.
 
