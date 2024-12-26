@@ -9,7 +9,7 @@ title: Home
 
 - [How to craft Malicious Machine Learning models](./2024-12-15-how-to-craft-malicious-ml-models)
 
-### Medium
+Check out my previous articles on Medium.
 
 - [Malicious ML models—Blurry HTB writeup](https://medium.com/@0xffisnotavailable/malicious-ml-models-blurry-htb-writeup-ce829bf5c6ae)
 - [LNK Dropper—Malware Analysis](https://medium.com/@0xffisnotavailable/lnk-dropper-malware-analysis-b1d3e3905f9d)
