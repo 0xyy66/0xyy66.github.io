@@ -5,11 +5,11 @@ title: Home
 
 ## $ whoami
 
-A SOC operator working to change sides and become a red teamer. CTFs player and self-taught explorer of the AI/ML universe. Intrigued by writing scripts and automating tasks—especially if it involves hacking something.
+SOC operator working to change sides and become a red teamer. CTFs player and self-taught explorer of the AI/ML universe. Intrigued by writing scripts and automating tasks—especially if it involves hacking something.
 
 ## ~/articles
 
-- [2025-12-15] - [How to craft Malicious Machine Learning models](./2024-12-15-how-to-craft-malicious-ml-models)
+- [2024-12-15] - [How to craft Malicious Machine Learning models](./2024-12-15-how-to-craft-malicious-ml-models)
 
 Check out my previous articles on Medium.
 
