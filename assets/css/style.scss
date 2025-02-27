@@ -11,6 +11,10 @@ header{
   border-bottom: 1px dashed #b90e0eed;
 }
 
+header h1::before {
+  content: "";
+}
+
 .container{
   display: flex;
   justify-content: space-between;
