@@ -9,6 +9,7 @@ SOC operator working to change sides and become a red teamer. CTFs player. Intri
 
 ## ~/articles
 
+- [2025-03-22] - [Access SSH via Kerberos](https://pwnyour.site/2025-03-22-access-ssh-via-kerberos)
 - [2024-12-15] - [How to craft Malicious Machine Learning models](./2024-12-15-how-to-craft-malicious-ml-models)
 
 Check out my previous articles on Medium.

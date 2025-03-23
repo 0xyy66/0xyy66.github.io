@@ -1,4 +1,4 @@
-# Accessing SSH via Kerberos authentication
+# Access SSH via Kerberos
 
 ![](assets/images/cerberus.jpeg)
 
@@ -79,7 +79,7 @@ I set the lifetime of the ticket to 1000 seconds (`-l 1000`), sometimes Kerberos
 
 Running `klist` you should be able to see some info about the ticket and that it stored in `/tmp/krb5cc_1000`.
 
-## SSH connection
+## SSH Connection
 
 ### SSH auth - Clock skew too great
 
