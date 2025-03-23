@@ -5,7 +5,7 @@ title: Home
 
 ## $ whoami
 
-SOC operator working to change sides and become a red teamer. CTFs player and self-taught explorer of the AI/ML universe. Intrigued by writing scripts and automating tasks—especially if it involves hacking something.
+SOC operator working to change sides and become a red teamer. CTFs player. Intrigued by writing scripts and automating tasks—especially if it involves hacking something.
 
 ## ~/articles
 
