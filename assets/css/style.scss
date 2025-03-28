@@ -20,3 +20,28 @@ header h1::before {
   justify-content: space-between;
   align-items: center;
 }
+
+#links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#links a {
+  color: #76ff03e0;
+}
+
+/* Ghost Terminal Theme*/
+/* header h1, h1, h2, h3, h4, h5, h6{
+  color: #ff4444;
+}
+
+header{
+  border-bottom: 1px dashed #b90e0eed;
+}
+
+a{
+  color: #76ff03e0;
+  text-shadow: 0 0 5px rgba(104, 213, 255, 0.23);
+}
+ */
