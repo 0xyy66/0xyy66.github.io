@@ -1,4 +1,10 @@
-# Access SSH via Kerberos
+---
+layout: post
+title: Access SSH via Kerberos
+date: 2025-03-22
+categories: [Cybersecurity, CTF, Pentest]
+tags: [cybersecurity, kerberos, ssh, pentest, ctf]
+---
 
 ![](assets/images/cerberus.jpeg)
 
