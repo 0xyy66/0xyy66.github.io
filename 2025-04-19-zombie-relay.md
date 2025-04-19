@@ -26,7 +26,7 @@ You can do it the other way around: make the target initiate an SSH connection t
 
 Since giving access to your host to the target is not a good idea, I created **Zombie Relay**, a docker-compose script to build an Alpine container with an OpenSSH server installed. **Designed to die and rise again, just like a zombie**.
 
-🗂 Repository: [Zombie Relay - Github](https://github.com/0xyy66/ZombieRelay)
+📂 Repository: [Zombie Relay - Github](https://github.com/0xyy66/ZombieRelay)
 
 - Easy to setup
 - Temporary
@@ -101,4 +101,4 @@ Lastly, once the remote local service is tunneled to your host, open your browse
 
 The relay is easy to set up, portable, and (hopefully) stealthier than dropping a binary on the target. A health check is in the works to help with connectivity issues. Suggestions and feedback are more than welcome.
 
-🗂 Repository: [Zombie Relay - Github](https://github.com/0xyy66/ZombieRelay)
+📂 Repository: [Zombie Relay - Github](https://github.com/0xyy66/ZombieRelay)
