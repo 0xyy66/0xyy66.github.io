@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Zombie Relay - Temporary Docker container for Reverse SSH Tunneling
+title: Zombie Relay - Temporary relay for Reverse SSH Tunneling
 date: 2025-04-19
 categories: [Cybersecurity, CTF, Pentest, Docker]
 tags: [cybersecurity, docker, ssh, pentest, ctf]
