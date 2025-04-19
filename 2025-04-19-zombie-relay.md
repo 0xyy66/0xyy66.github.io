@@ -1,12 +1,14 @@
 ---
 layout: post
-title: ZombieRelay - Temporary Docker container for reverse SSH Tunneling
+title: Zombie Relay - Temporary Docker container for Reverse SSH Tunneling
 date: 2025-04-19
 categories: [Cybersecurity, CTF, Pentest, Docker]
 tags: [cybersecurity, docker, ssh, pentest, ctf]
 ---
 
 ![](/assets/images/zombierelay_banner_wb1.jpg)
+
+📂 Repository: [Zombie Relay - Github](https://github.com/0xyy66/ZombieRelay)
 
 It is not uncommon to find web services running only on the loopback interface while enumerating a system after gaining a foothold on it during a penetration test (or a CTF). How do you visit them if you don't have access to a browser on the remote host? If you accessed the target via SSH or got an instable reverse shell after exploiting some external service?
 
@@ -25,8 +27,6 @@ However, there are cases where you don't have credentials to access SSH or the t
 You can do it the other way around: make the target initiate an SSH connection to your machine hosting an SSH server, effectively creating a reverse tunnel from the target to your host.
 
 Since giving access to your host to the target is not a good idea, I created **Zombie Relay**, a docker-compose script to build an Alpine container with an OpenSSH server installed. **Designed to die and rise again, just like a zombie**.
-
-📂 Repository: [Zombie Relay - Github](https://github.com/0xyy66/ZombieRelay)
 
 - Easy to setup
 - Temporary
@@ -53,7 +53,7 @@ By default only 2 ports are mapped:
 - 2224:22 - exposes OpenSSH on your host on port 2224
 - 9090:9090 - you will tunnel the remote service through port 9090 of the container and it will be available on port 9090 of your host.
 
-**You can map as many ports as you need**, just append another line to ports (ex. `- "80:8080"`).
+**You can map as many ports as you need**, just append another line to ports (e.g. `- "80:8080"`).
 
 ### Raising a zombie
 
@@ -61,9 +61,9 @@ Spawning a Zombie Relay container is as easy as running `docker compose up`.
 
 ![](/assets/images/zombierelay_attacker_docker.png)
 
-The docker compose script fetches an Alpine container, installs OpenSSH, creates a pair of keys (Ed25519) and copies the sshd_config configured to permit tunneling inside the container.
+Everytime you create the container, the compose will automatically create a new private key. Drop it on the target to connect to the container.
 
-After the keys creation, Docker prints out the private key, so you can drop it on the target and connect back to the container running on your host (it just needs some manual cleaning from the Docker prefix and the newlines) or you can directly copy the key from the container to your host (preferred way).
+Run the following command to copy the key from the container to your host.
 
 ```sh
 docker cp $(docker ps -l -q):/root/.ssh/id_ed25519 .
@@ -96,6 +96,16 @@ In this case, I'm mapping the local service running on port 8080 to the Zombie R
 Lastly, once the remote local service is tunneled to your host, open your browser and navigate to it via the mapped port (9090 in this case).
 
 ![](/assets/images/zombierelay_attacker_tunneled_service.png)
+
+### Kill the zombie
+
+Once you no longer need the relay, simply run the following command to stop and remove the latest container created.
+
+```sh
+docker stop $(docker ps -l -q) && docker rm $(docker ps -l -q)
+```
+
+> BEWARE: If Zombie Relay is not the most recent container created, the command will remove a different container. To avoid this, use the container's name instead (e.g., `zombierelay-zombierelay-1` if you cloned the repo).
 
 ## Conclusion
 
